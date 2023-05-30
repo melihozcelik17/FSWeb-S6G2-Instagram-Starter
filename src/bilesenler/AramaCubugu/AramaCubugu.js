@@ -10,13 +10,15 @@ import {
 import "./AramaCubugu.css";
 
 const AramaCubugu = (props) => {
+  const {arama,chanceHandler} = props;
+
   return (
     <div className="search-bar-wrapper">
       <div className="social">
         <FontAwesomeIcon icon={faInstagram} />
       </div>
       <form className="search-form">
-        <input type="text" placeholder="Arama" />
+        <input type="text" placeholder="Arama" value={arama} onChange={chanceHandler} />
       </form>
       <div className="social-wrapper">
         <div className="social">
