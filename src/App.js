@@ -56,7 +56,7 @@ const App = () => {
     setArama(event.target.value);
     const filterGonderiler = sahteVeri.filter((item)=>{
     return item.username.includes(event.target.value);
-  }) 
+  })  
   setGonderiler(filterGonderiler);
    }
   return (
